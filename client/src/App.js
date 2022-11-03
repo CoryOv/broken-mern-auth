@@ -2,11 +2,17 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
-
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
 
+import Register from "./components/auth/Register";
+import Login from "./components/auth/Login";
+// import Navbar from "./components/layout/Navbar";
+import Landing from "./components/layout/Landing";
+import PrivateRoute from "./components/private-route/PrivateRoute";
+import Dashboard from "./components/dashboard/Dashboard";
+import Tron from "./components/Projects/Tron";
 import "./App.css";
 
 // Check for token to keep user logged in
@@ -34,15 +40,18 @@ class App extends Component {
       <Provider store={store}>
         <Router>
           <div className="App">
-            <Navbar />
+            {/* <Navbar /> */}
             <Route exact path="/" component={Landing} />
+            <Route exact path="/register" component={Register} />
+            <Route exact path="/login" component={Login} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute exact path="/tron" component={Tron} />
             </Switch>
           </div>
         </Router>
       </Provider>
     );
   }
-
+}
 export default App;

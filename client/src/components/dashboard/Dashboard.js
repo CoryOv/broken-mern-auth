@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
+import { Link } from "react-router-dom";
 
 class Dashboard extends Component {
   onLogoutClick = e => {
@@ -21,7 +22,19 @@ class Dashboard extends Component {
               <p className="flow-text grey-text text-darken-1">
                 You have been successfully logged in to the{" "}
                 <span style={{ fontFamily: "monospace" }}>Portal</span>
+              </p>
             </h4>
+            <Link
+                to="/tron"
+                style={{
+                  width: "100px",
+                  borderRadius: "3px",
+                  letterSpacing: "1.5px"
+                }}
+                className="btn btn-large waves-effect waves-light hoverable orange accent-3"
+              >
+                Tron
+              </Link> <br></br>
             <button
               style={{
                 borderRadius: "3px",
@@ -32,6 +45,7 @@ class Dashboard extends Component {
               className="btn btn-large waves-effect waves-light hoverable blue accent-3"
             >
               Logout
+              </button>
           </div>
         </div>
       </div>
@@ -46,7 +60,7 @@ Dashboard.propTypes = {
 
 const mapStateToProps = state => ({
   auth: state.auth
-};
+});
 
 export default connect(
   mapStateToProps,
