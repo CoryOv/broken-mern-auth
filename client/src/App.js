@@ -13,6 +13,7 @@ import Landing from "./components/layout/Landing";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import Tron from "./components/Projects/Tron";
+import Compvision from "./components/Projects/Compvision"
 import "./App.css";
 
 // Check for token to keep user logged in
@@ -47,6 +48,7 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute exact path="/tron" component={Tron} />
+              <PrivateRoute exact path="/compvision" component={Compvision} />
             </Switch>
           </div>
         </Router>

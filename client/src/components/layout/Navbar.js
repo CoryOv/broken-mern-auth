@@ -8,7 +8,7 @@ class Navbar extends Component {
     if (pathname !== "/login" || pathname !== "/register" || pathname !== "/") {
       return (
         <Link
-        to="/"
+        to="/dashboard"
         style={{
           fontFamily: "monospace"
         }}

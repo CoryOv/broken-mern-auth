@@ -35,6 +35,18 @@ class Dashboard extends Component {
               >
                 Tron
               </Link> <br></br>
+              <Link
+                to="/compvision"
+                style={{
+                  width: "320px",
+                  borderRadius: "3px",
+                  letterSpacing: "1.5px",
+                  margin: "10px"
+                }}
+                className="btn btn-large waves-effect waves-light hoverable green accent-3"
+              >
+                Webcam Image Recognition
+              </Link> <br></br>
             <button
               style={{
                 borderRadius: "3px",
