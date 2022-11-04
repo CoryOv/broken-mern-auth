@@ -19,34 +19,49 @@ class Dashboard extends Component {
           <div className="landing-copy col s12 center-align">
             <h4>
               <b>Welcome,</b> {user.name.split(" ")[0]}
-              <p className="flow-text grey-text text-darken-1">
+              <p className="flow-text white-text text-darken-1">
                 You have been successfully logged in to the{" "}
                 <span style={{ fontFamily: "monospace" }}>Portal</span>
               </p>
             </h4>
-            <Link
-                to="/tron"
-                style={{
-                  width: "100px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px"
-                }}
-                className="btn btn-large waves-effect waves-light hoverable orange accent-3"
-              >
-                Tron
-              </Link> <br></br>
+            <div id="projects-links">
               <Link
-                to="/compvision"
-                style={{
-                  width: "320px",
-                  borderRadius: "3px",
-                  letterSpacing: "1.5px",
-                  margin: "10px"
-                }}
-                className="btn btn-large waves-effect waves-light hoverable green accent-3"
-              >
-                Webcam Image Recognition
-              </Link> <br></br>
+                  to="/tron"
+                  style={{
+                    width: "100px",
+                    borderRadius: "3px",
+                    letterSpacing: "1.5px",
+                    margin: "10px"
+                  }}
+                  className="btn btn-large waves-effect waves-light hoverable orange accent-3"
+                >
+                  Tron
+                </Link> <br></br>
+                <Link
+                  to="/chatbot"
+                  style={{
+                    width: "150px",
+                    borderRadius: "3px",
+                    letterSpacing: "1.5px",
+                    margin: "10px"
+                  }}
+                  className="btn btn-large waves-effect waves-light hoverable purple accent-3"
+                >
+                  ChatBot
+                </Link> <br></br>
+                <Link
+                  to="/compvision"
+                  style={{
+                    width: "320px",
+                    borderRadius: "3px",
+                    letterSpacing: "1.5px",
+                    margin: "10px"
+                  }}
+                  className="btn btn-large waves-effect waves-light hoverable green accent-3"
+                >
+                  Webcam Image Recognition
+                </Link> 
+            </div> <br></br>
             <button
               style={{
                 borderRadius: "3px",

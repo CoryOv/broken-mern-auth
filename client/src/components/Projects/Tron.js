@@ -9,7 +9,7 @@ class Tron extends Component {
         return (
             <div><Navbar />
             <div id="stretchFrame">
-                { <iframe id="magicFrame"src="./TRON/tronhtml.html" title="Tron Browser Game" width="1500" height="842"></iframe> }
+                { <iframe id="magicFrame"src="./TRON/tronhtml.html" title="Tron Browser Game" width="1600" height="842"></iframe> }
             </div>
             </div>
 

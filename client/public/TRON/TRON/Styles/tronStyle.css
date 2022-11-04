@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+
+#tronbody {
+    font-family: 'Orbitron', sans-serif;
+    background: #000;
+    text-align: center;
+    display: block;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqzOnzW4Po-ztWKqEisS-CkclC57n4o0_LCg&usqp=CAU); */
+    z-index: 1;
+}
+
+#tron {
+    border: 1px solid lightgray;
+    outline-offset: 5px;
+    outline: 1px solid rgb(51, 51, 51);
+    z-index: 2;
+}
+
+#tronh1 {
+    color: rgb(22, 166, 214);
+}
+
+#tronp1 {
+    color: blue;
+}
+
+#tronp2 {
+    color: orange;
+}

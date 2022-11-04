@@ -4,12 +4,12 @@ import Navbar from "../layout/Navbar";
 // import "./Styles/tronStyle.css";
 // const tronjava = require("./Scripts/tronScript");
 
-class Compvision extends Component {
+class Chatbot extends Component {
     render() {
         return (
             <div><Navbar />
             <div id="stretchFrame">
-                { <iframe id="magicFrame"src="./WEBCAMML/index.html" title="Machine learning image recognition" width="1600" height="842"></iframe> }
+                { <iframe id="magicFrame"src="https://corys-chatbot.herokuapp.com/" title="ChatBot" width="1600" height="820"></iframe> }
             </div>
             </div>
 
@@ -17,4 +17,4 @@ class Compvision extends Component {
     }
 }
 
-export default Compvision;
+export default Chatbot;
